@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.app__title {
+  text-shadow: 2px 2px 4px yellow;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.MenuContainer {
+  height: 50%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-start;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url("./img/depositphotos_180185242-stock-photo-big-tasty-burger-with-flying.jpg");
+  background-position: right center;
+  background-size: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app__input {
+  height: 28px;
+  border-style: none;
+  margin-right: 10px;
+}
+
+.app__button {
+  height: 30px;
+  cursor: pointer;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

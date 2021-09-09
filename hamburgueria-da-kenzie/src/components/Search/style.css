@@ -1,0 +1,31 @@
+.search__input {
+  width: 250px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  margin: 50px 10px 0 0;
+  padding-left: 7px;
+}
+
+.search__button {
+  background: rgba(255, 255, 255, 0.747);
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 80px;
+  height: 34px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.search__button:hover {
+  background:rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.search__button:active {
+  color: blue;
+}
