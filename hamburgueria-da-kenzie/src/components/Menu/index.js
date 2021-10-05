@@ -1,14 +1,26 @@
 import "./style.css";
+import { useState } from "react";
 
-const Products = ({ products, filteredProducts, setCartTotal, currentSale, setCurrentSale }) => {
+const Products = ({
+  products,
+  filteredProducts,
+  setCartTotal,
+  currentSale,
+  setCurrentSale,
+}) => {
+  const [productsArray, setProductsArray] = useState([]);
+
   const AddToCart = (productId) => {
     const newProduct = products.filter((product) => {
       return product.id === productId;
     });
 
-    setCurrentSale([...currentSale, newProduct]);
+    if (!productsArray.includes(productId)) {
+      setCurrentSale([...currentSale, newProduct]);
+      setProductsArray([...productsArray, productId]);
+    }
   };
-  
+
   const cartTotal = currentSale.reduce((acc, currentValue) => {
     return acc + currentValue[0].price;
   }, 0);
